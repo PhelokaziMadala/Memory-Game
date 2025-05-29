@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🧠 Memory Game</h1>
+            <div class="score-board">
+                <div class="game-stats">
+                    <span>Score: <span id="score">0</span></span>
+                    <span>Moves: <span id="moves">0</span></span>
+                    <span>Time: <span id="timer">00:00</span></span>
+                </div>
+                <div class="high-score">
+                    Best Score: <span id="high-score">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <div class="difficulty-selector" id="difficulty-selector">
+                <h3>Choose Difficulty</h3>
+                <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+                <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+            </div>
+
+            <div class="game-board" id="game-board"></div>
+
+            <div class="game-status" id="game-status"></div>
+
+            <div class="controls">
+                <button id="new-game-btn" class="control-btn">New Game</button>
+                <button id="reset-btn" class="control-btn">Reset</button>
+                <button id="sound-toggle" class="sound-btn">🔊 Sound ON</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
